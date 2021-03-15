@@ -14,8 +14,7 @@ def q2
   array2 = ["bird", "bat", "tiger"]
 
   # 以下に回答を記載
-  array1.push(array2)
-  array1.flatten!
+  array1 = array1 + array2
   p array1
 end
 
