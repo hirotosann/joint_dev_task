@@ -236,13 +236,13 @@ class Zoo
   def info_entry_fee(user)
     case user.age
     when 0..5
-      puts "#{@name}さんの入場料金は#{@entry_fee[:infant]}円です。"
+      puts "#{user.name}さんの入場料金は#{@entry_fee[:infant]}円です。"
     when 6..12
-      puts "#{@name}さんの入場料金は#{@entry_fee[:children]}円です。"
+      puts "#{user.name}さんの入場料金は#{@entry_fee[:children]}円です。"
       when 13..64
-      puts "#{@name}さんの入場料金は#{@entry_fee[:adult]}円です。"
+      puts "#{user.name}さんの入場料金は#{@entry_fee[:adult]}円です。"
       when 65..120
-      puts "#{@name}さんの入場料金は#{@entry_fee[:senior]}円です。"
+      puts "#{user.name}さんの入場料金は#{@entry_fee[:senior]}円です。"
     end
   end
 end
